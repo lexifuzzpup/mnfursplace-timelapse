@@ -19,7 +19,7 @@ async function main() {
 
     const pixels = response.pixels;
     for(let j = 0; pixels.length > 0; j++) {
-        for(let i = 0; i < 128; i++) {
+        for(let i = 0; i < 16; i++) {
             placeNext(pixels);
         }
         

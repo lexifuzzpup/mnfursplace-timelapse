@@ -3,8 +3,5 @@
 echo "Fetching frames"
 node index
 
-echo "Creating gif"
-convert -delay 5 -loop 0 output/*.png output/unoptimized.gif
-
-echo "Optimizing gif"
-gifsicle  -O3 --colors 256 -o output/final.gif output/unoptimized.gif
+echo "Creating video"
+ffmpeg -framerate 60 -i output/%04d.png -c:v libx264 -pix_fmt yuv420p -r 60 output/final.mp4

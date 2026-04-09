@@ -5,9 +5,9 @@ Generates a timelapse of https://mnfursplace.laravel.cloud/
 
 ## Installation
 
-Install binaries (imagemagick, gifsicle, node):
+Install binaries (ffmpeg, node):
 ```sh
-apt-get install nodejs npm imagemagick-7.q16 gifsicle
+apt-get install nodejs npm ffmpeg
 ```
 
 Install node modules:
@@ -16,6 +16,6 @@ npm i
 ```
 
 ## Running
-Run `./build.sh` and use the output file `output/final.gif` when the program finishes.
+Run `./build.sh` and use the output file `output/final.mp4` when the program finishes.
 
 ![Screenshot of MNFursPlace](./thumbnail.png)
